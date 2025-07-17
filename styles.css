@@ -214,8 +214,23 @@ h1 {
 
 }
 
+#date-presentation {
+/* Sep. 2014 - Sep. 2019 */
+
+    width: 182px;
+    height: 21px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+/*     font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.02em; */
+    color: #1D5D4D;
+
+}
+
+
 .uni-name,
-.date-presentation,
 .key-aspects {
     font-weight: 400;
     font-size: 16px;
