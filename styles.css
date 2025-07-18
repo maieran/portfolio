@@ -153,7 +153,7 @@ h1 {
 }
 
 
-#tile {
+#education-tile {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -229,11 +229,80 @@ h1 {
 
 }
 
-
 .uni-name,
 .key-aspects {
     font-weight: 400;
     font-size: 16px;
+}
+
+#work-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; /* vorher 32px */
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#work-experience-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; /* vorher 32px */
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#work-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 24px; /* vorher 0%; reduziert, aber nicht ganz entfernt für Luft */
+    gap: 8px; /* vorher 12px */
+    width: 585px;
+    border: 1px solid #DEDEDE;
+    border-radius: 44px;
+    box-sizing: border-box;
+}
+
+.work-tile-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* vorher 8px */
+    margin: 0;
+    padding: 0;
+}
+
+#work-name {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 20px; /* vorher 24px */
+    line-height: 24px;
+    text-align: center;
+    color: #1D5D4D;
+    margin: 0;
+}
+
+#work-location,
+#work-date-presentation {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size: 14px; /* kleiner als vorher */
+    line-height: 18px;
+    color: #1D5D4D;
+    margin: 0;
+}
+
+#work-responsibilites {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1C1B1F;
+    text-align: center;
+    margin: 4px 0 0 0; /* Minimaler Abstand nach oben */
+    max-width: 497px;
 }
 
 

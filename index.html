@@ -45,7 +45,7 @@
             <section id="education">
             <!-- <h2>Education</h2> -->
             <ul id="education-list">
-                <div id="tile">
+                <div id="education-tile">
                     <div id="tile-info">
                         <div id="ba-icon">
                             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <div id="tile">
+                <div id="education-tile">
                         <div id="tile-info">
                             <div id="ms-icon">
                                 <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,24 +98,54 @@
             </ul>
             </section>
 
-            <section id="work-experiences">
+            <section id="work-experience">
             <!-- <h2>Work Experiences</h2> -->
+             
             <ul id="work-experience-list">
-                <p>Software Developer at Contag AG, Berlin</p>
-                    <p id="work-date-presentation">Jan. 2021 - Present</p>
-                    <p>Tech Stack: Java Core, Java SE, Java Swing, ASPX, .NET, Frontend-Entwicklung mit
-HTML, CSS und JavaScript, Versionsverwaltungsysteme: TFS und Git
-Datenbanken: MS SQL</p>
-                    <p>Responsibilities: Developing and maintaining software applications and infrastructure, collaborating with cross-functional teams, and ensuring code quality.</p>
+                <div id="work-tile">
+                    <p id="work-name">Software Developer at Contag AG</p>
+                        <div class="work-tile-line">
+                            <div id="location-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_2113_442" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                                        <rect width="16" height="16" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2113_442)">
+                                        <path d="M7.99996 7.99992C8.36663 7.99992 8.68051 7.86936 8.94163 7.60825C9.20274 7.34714 9.33329 7.03325 9.33329 6.66659C9.33329 6.29992 9.20274 5.98603 8.94163 5.72492C8.68051 5.46381 8.36663 5.33325 7.99996 5.33325C7.63329 5.33325 7.3194 5.46381 7.05829 5.72492C6.79718 5.98603 6.66663 6.29992 6.66663 6.66659C6.66663 7.03325 6.79718 7.34714 7.05829 7.60825C7.3194 7.86936 7.63329 7.99992 7.99996 7.99992ZM7.99996 12.8999C9.35551 11.6555 10.3611 10.5249 11.0166 9.50825C11.6722 8.49159 12 7.58881 12 6.79992C12 5.58881 11.6138 4.59714 10.8416 3.82492C10.0694 3.0527 9.12218 2.66659 7.99996 2.66659C6.87774 2.66659 5.93051 3.0527 5.15829 3.82492C4.38607 4.59714 3.99996 5.58881 3.99996 6.79992C3.99996 7.58881 4.32774 8.49159 4.98329 9.50825C5.63885 10.5249 6.6444 11.6555 7.99996 12.8999ZM7.99996 14.6666C6.21107 13.1444 4.87496 11.7305 3.99163 10.4249C3.10829 9.11936 2.66663 7.91103 2.66663 6.79992C2.66663 5.13325 3.20274 3.80547 4.27496 2.81659C5.34718 1.8277 6.58885 1.33325 7.99996 1.33325C9.41107 1.33325 10.6527 1.8277 11.725 2.81659C12.7972 3.80547 13.3333 5.13325 13.3333 6.79992C13.3333 7.91103 12.8916 9.11936 12.0083 10.4249C11.125 11.7305 9.78885 13.1444 7.99996 14.6666Z" fill="#1D5D4D"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p id="work-location">Berlin</p>
+                        </div>
+                        <div class="work-tile-line">
+                            <div id="clock-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_2113_484" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                                        <rect width="16" height="16" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2113_484)">
+                                        <path d="M7.9999 14.6666C7.16657 14.6666 6.38601 14.5083 5.65824 14.1916C4.93046 13.875 4.29712 13.4472 3.75824 12.9083C3.21935 12.3694 2.79157 11.7361 2.4749 11.0083C2.15824 10.2805 1.9999 9.49998 1.9999 8.66665C1.9999 7.83332 2.15824 7.05276 2.4749 6.32498C2.79157 5.59721 3.21935 4.96387 3.75824 4.42498C4.29712 3.88609 4.93046 3.45832 5.65824 3.14165C6.38601 2.82498 7.16657 2.66665 7.9999 2.66665C8.83324 2.66665 9.61379 2.82498 10.3416 3.14165C11.0693 3.45832 11.7027 3.88609 12.2416 4.42498C12.7805 4.96387 13.2082 5.59721 13.5249 6.32498C13.8416 7.05276 13.9999 7.83332 13.9999 8.66665C13.9999 9.49998 13.8416 10.2805 13.5249 11.0083C13.2082 11.7361 12.7805 12.3694 12.2416 12.9083C11.7027 13.4472 11.0693 13.875 10.3416 14.1916C9.61379 14.5083 8.83324 14.6666 7.9999 14.6666ZM9.86657 11.4667L10.7999 10.5333L8.66657 8.39998V5.33332H7.33324V8.93332L9.86657 11.4667ZM3.73324 1.56665L4.66657 2.49998L1.83324 5.33332L0.899902 4.39998L3.73324 1.56665ZM12.2666 1.56665L15.0999 4.39998L14.1666 5.33332L11.3332 2.49998L12.2666 1.56665ZM7.9999 13.3333C9.2999 13.3333 10.4027 12.8805 11.3082 11.975C12.2138 11.0694 12.6666 9.96665 12.6666 8.66665C12.6666 7.36665 12.2138 6.26387 11.3082 5.35832C10.4027 4.45276 9.2999 3.99998 7.9999 3.99998C6.6999 3.99998 5.59713 4.45276 4.69157 5.35832C3.78601 6.26387 3.33324 7.36665 3.33324 8.66665C3.33324 9.96665 3.78601 11.0694 4.69157 11.975C5.59713 12.8805 6.6999 13.3333 7.9999 13.3333Z" fill="#1D5D4D"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p id="work-date-presentation">Dec. 2023 - Present</p>
+                        </div>
+                        <p id="work-responsibilites">Developing and maintaining software applications and infrastructure, collaborating with cross-functional teams, and ensuring code quality.</p>
+<!--                         <ul id="tech-list">
+                            <li>Java SE, Swing</li>
+                            <li>C#, ASPX, .NET</li>
+                            <li>HTML, CSS und JavaScript</li>
+                            <li>TFS, Git</li>
+                            <li>MS SQL</li>
+                        </ul> -->
+                </div>
 
-
-                <li>Working Student in Software Developement at Siemens Mobility, Erlangen
-                    <ul>
-                        <li>May 2022 - Nov. 2023</li>
-                        <li>Tech Stack: .NET und C#, Jenkins and GitLab for CI/CD, Jfrog for Artifactory</li>
-                        <li>Responsibilities: Assisting in the development of software solutions and software migration, participating in code reviews, and contributing to project documentation.</li>
-                    </ul>
-                </li>
+                <p>Working Student in Software Developement at Siemens Mobility, Erlangen</p>
+                        <p>May 2022 - Nov. 2023</p>
+                        <p>Tech Stack: .NET und C#, Jenkins and GitLab for CI/CD, Jfrog for Artifactory</p>
+                        <p>Responsibilities: Assisting in the development of software solutions and software migration, participating in code reviews, and contributing to project documentation.</p>
+                    
+                    
                     <li>Working Student und Test Administration at
 Brose Fahrzeugteile SE & Co. KG, Bamberg
                     <ul>
@@ -204,6 +234,7 @@ Fun Fact: Ich habe mal versucht, meinen alten Röhrenmonitor in ein “Smart Hom
             </span>
         </section>
     </div>
+
     <div id="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out for collaborations or inquiries regarding coding problems or architectural problems.</p>
@@ -225,12 +256,6 @@ Fun Fact: Ich habe mal versucht, meinen alten Röhrenmonitor in ein “Smart Hom
           Designed by Yelyzaveta Khoroshun. <br> 
           All rights reserved.</p>
     </footer>
-     
-
-
-
-    </div>
-
-    
+        
 </body>
 </html>
