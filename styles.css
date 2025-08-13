@@ -310,6 +310,17 @@ h1 {
     max-width: 497px;
 }
 
+#project-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px; /* vorher 32px */
+    width: 1280px;
+    margin: 0 auto;
+}
+
 
 
 
