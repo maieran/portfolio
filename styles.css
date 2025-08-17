@@ -321,6 +321,90 @@ h1 {
     margin: 0 auto;
 }
 
+.project-tile {
+    /* bachelor box */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 44px;
+    gap: 16px;
+    isolation: isolate;
+
+    width: 585px;
+    height: 341px;
+
+    background: linear-gradient(180deg, #22272F 0%, #1D5D4D 73.95%);
+    border: 1px solid #DEDEDE;
+    border-radius: 44px;
+}
+.project-title {
+/* Projekt zur Medieninformatik */
+    width: 332px;
+    height: 30px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.project-underline {
+    width: 499px;
+    height: 0px;
+    border: 0.5px solid #FDFDFF;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 499px;
+    height: 60px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FDFDFF;
+}
+
+.github-code {
+    box-sizing: border-box;
+    width: 113px;
+    height: 37px;
+    left: 430px;
+    top: 258px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 44px;
+}
+
+
+
+.code-text {
+    /* Code */
+    width: 44px;
+    height: 20px;
+    left: 47.36px;
+    top: 8px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #1C1B1F;
+
+
+}
+
 
 
 
