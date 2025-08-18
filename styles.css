@@ -342,8 +342,7 @@ h1 {
     border-radius: 44px;
 }
 .project-title {
-/* Projekt zur Medieninformatik */
-    width: 332px;
+    width: 585px;
     height: 30px;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
@@ -375,8 +374,53 @@ h1 {
     color: #FDFDFF;
 }
 
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+/*     flex-direction: row;
+    align-items: center; */
+/*     padding: 0px;
+    gap: 24px;
+    width: 342px;
+    height: 26px; */
+}
+.tag-tech {
+    border: 2px solid currentColor;
+    color: #3498db;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: default;
+    transition: transparent;
+}
+
+.tag:hover {
+    background-color: #16a085;
+}
+
+.first-tech {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 33px;
+    width: 79px;
+    height: 26px;
+
+    border: 1px solid #FDFDFF;
+    border-radius: 44px;
+}
+
 .github-code {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 113px;
     height: 37px;
     left: 430px;
@@ -386,10 +430,11 @@ h1 {
     border-radius: 44px;
 }
 
-
+.github-icon {
+    /* Vector */
+}
 
 .code-text {
-    /* Code */
     width: 44px;
     height: 20px;
     left: 47.36px;
@@ -399,11 +444,11 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-
     color: #1C1B1F;
-
-
+    margin: 0 auto;
 }
+
+
 
 
 
