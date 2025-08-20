@@ -322,25 +322,21 @@ h1 {
 }
 
 .project-tile {
-    /* bachelor box */
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:44px;
+  gap:16px;
+  isolation:isolate;
 
-    box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 44px;
-    gap: 16px;
-    isolation: isolate;
-
-    width: 585px;
-    height: 341px;
-
-    background: linear-gradient(180deg, #22272F 0%, #1D5D4D 73.95%);
-    border: 1px solid #DEDEDE;
-    border-radius: 44px;
+  width:585px;
+  min-height:341px; 
+  background:linear-gradient(180deg,#22272F 0%, #1D5D4D 73.95%);
+  border:1px solid #DEDEDE;
+  border-radius:44px;
 }
+
 .project-title {
     width: 585px;
     height: 30px;
@@ -378,80 +374,74 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-/*     flex-direction: row;
-    align-items: center; */
-/*     padding: 0px;
-    gap: 24px;
-    width: 342px;
-    height: 26px; */
 }
+
 .tag-tech {
-    border: 2px solid currentColor;
-    color: #3498db;
-    padding: 8px 16px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: default;
-    transition: transparent;
+  border: 2px solid currentColor;
+  color: #3498db;   /* example, can be randomized */
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;  /* no fill, background shows */
 }
 
-.tag:hover {
-    background-color: #16a085;
+
+.tag {
+  display:inline-flex;              /* Pill schrumpft auf Textbreite */
+  align-items:center;               /* vertikal zentriert */
+  justify-content:center;           /* horizontal zentriert */
+  padding:0 16px;
+  min-height:26px;                  /* statt fixed height */
+  border:1px solid currentColor;    /* Border = Textfarbe */
+  border-radius:9999px;
+  background:transparent;
+  color:#FDFDFF;                    /* Standardfarbe */
+  font-family:'Plus Jakarta Sans', sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:1;                    /* verhindert Versatz */
+  margin:0;                         /* p-Default-Margins weg */
 }
 
-.first-tech {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 33px;
-    width: 79px;
-    height: 26px;
+.tag--blue  { color:#9AC4F8; }
+.tag--green { color:#1abc9c; }
+.tag--white { color:#FDFDFF; }
+.tag--yellow { color:#f1c40f; } 
+.tag--red    { color:#e74c3c; }
+.tag--purple { color:#9b59b6; }
 
-    border: 1px solid #FDFDFF;
-    border-radius: 44px;
-}
+
 
 .github-code {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 113px;
-    height: 37px;
-    left: 430px;
-    top: 258px;
-    background: #FFFFFF;
-    border: 1px solid #DEDEDE;
-    border-radius: 44px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 14px;
+  background:#fff;
+  border:1px solid #DEDEDE;
+  border-radius:44px;
+  align-self:flex-end;
+  transition:transform .2s ease, box-shadow .2s ease;
 }
 
-.github-icon {
-    /* Vector */
+.github-code:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
 }
 
-.code-text {
-    width: 44px;
-    height: 20px;
-    left: 47.36px;
-    top: 8px;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #1C1B1F;
-    margin: 0 auto;
+.github-icon svg{ 
+    width:29.3px; 
+    height:29.3px; 
+    display:block; 
 }
 
-
-
-
-
+.code-text{ 
+    margin:0; 
+    line-height:1; 
+    font:400 16px/1 'Plus Jakarta Sans', sans-serif; 
+    color:#1C1B1F;
+}
 
 
 
