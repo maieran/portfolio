@@ -443,38 +443,33 @@ h1 {
     color:#1C1B1F;
 }
 
-#study {
+
+.study-container {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;   
+    align-items: flex-start;
     padding: 44px;
     gap: 16px;
     isolation: isolate;
     border: 1px solid #DEDEDE;
     border-radius: 44px;
-    /* left: calc(50% - 1280px/2); */
+    width: auto;
 }
-
 /*BEGIN: Here we will add below pic styling*/
 
 .thesis-pic {
-/* practise 8 */
-
     box-sizing: border-box;
-
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 44px;
     gap: 16.38px;
     isolation: isolate;
-
     width: 312.01px;
     height: 352.5px;
-    left: 138px;
-    top: 333px;
+    /* left: 138px;
+    top: 333px; */
     border: 1px solid #D9D9D9;
     border-radius: 45.0406px;
     transform: rotate(8.15deg);
@@ -564,6 +559,51 @@ h1 {
     font-size: 16px;
     line-height: 24px;
     color: #1C1B1F;
+}
+
+.course-tile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 568px;
+    /* height: 128px; */
+    padding: 22px;
+    gap: 10px;
+    height: auto;
+    border: 1px solid #D9D9D9;
+    border-radius: 44px;
+}
+
+.course-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.course-header {
+    /* width: 399px;
+    height: 20px; */
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1D5D4D;
+    margin: 0;
+}
+
+.course-description {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #1C1B1F;
+    margin: 0;
 }
 
 /* mobile responsiveness */
