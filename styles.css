@@ -447,15 +447,16 @@ h1 {
 .study-container {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 44px;
-    gap: 16px;
+    gap: 40px;
     isolation: isolate;
     border: 1px solid #DEDEDE;
     border-radius: 44px;
-    width: auto;
+    width: 100%;
 }
+
 /*BEGIN: Here we will add below pic styling*/
 
 .thesis-pic {
@@ -468,15 +469,19 @@ h1 {
     isolation: isolate;
     width: 312.01px;
     height: 352.5px;
-    /* left: 138px;
-    top: 333px; */
-    border: 1px solid #D9D9D9;
-    border-radius: 45.0406px;
-    transform: rotate(8.15deg);
 }
 
 /*END: Here we will add above pic styling*/
 
+.thesis-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 568px;
+    height: auto;
+}
 
 .study-title {
     /* Masterarbeit */
@@ -549,7 +554,7 @@ h1 {
 }
 
 .thesis-description {
-    width: 957px;
+    width: 568px;
     height: auto;
     left: 666px;
     top: 221px;
@@ -566,12 +571,19 @@ h1 {
     flex-direction: row;
     align-items: center;
     width: 568px;
-    /* height: 128px; */
     padding: 22px;
     gap: 10px;
-    height: auto;
     border: 1px solid #D9D9D9;
     border-radius: 44px;
+    margin-bottom: 20px;
+
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-tile:last-child {
+    margin-bottom: 0; /* kein extra Abstand beim letzten Tile */
 }
 
 .course-text {
