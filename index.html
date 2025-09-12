@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    
 </head>
 <body>
 
     <header class="navbar">
     <div class="nav-left">
-        <img src="assets/images/favicon-32x32.png" alt="Profil" class="nav-profile-pic" />
+        <div class="nav-profile-container">
+            <div>
+                <img src="assets/images/favicon-32x32.png" alt="Profil"  class="nav-profile-pic"/>
+            </div>
+            <div class="nav-status-indicator">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4" cy="4" r="3.5" fill="#40D1AD" stroke="#FDFDFF"/>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="nav-text-left"><span >Andre Maier</span></div>
         <div class="nav-section-title" id="current-section">/About</div>
     </div>
 
@@ -44,7 +57,7 @@
                     <p>Die Mischung aus unterschiedlichen Bereichen verspricht dabei einen sorgfältigen und rücksichtsvollen Umgang mit Menschen und Technologien.</p>
                 </div>
             </div>
-            <img src="assets/images/profile-pic.jpg" id="profile-pic">
+            <img src="assets/images/nice-shirt.png" id="profile-pic">
         </section>
 
         <section id="education">
@@ -423,7 +436,6 @@ Codebeamer (application lifecycle management)</p>
 
         </div>
     </div>
-
     </div>
 
     <footer>
@@ -431,6 +443,8 @@ Codebeamer (application lifecycle management)</p>
           Designed by Yelyzaveta Khoroshun. <br> 
           All rights reserved.</p>
     </footer>
+
+    <script src="index.js" charset="utf-8"></script>
 </script>
 </body>
 </html>

@@ -10,6 +10,69 @@
     height: 54px;
 }
 
+/* BEGIN Navbar Left Section */
+.nav-left {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 0px;
+  width: 270px;
+  height: 54px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  border-radius: 44px;
+}
+
+.nav-profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative; /* <- wichtig */
+}
+
+.nav-status-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.nav-text-left {
+  width: 87px;
+  height: 20px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #1C1B1F;
+}
+
+.nav-profile-pic {
+  width: 30px;
+  height: 30px;
+  background: url(nice-shirt.png);
+  border-radius: 100%;
+}
+
+.nav-section-title {
+  background: #42d1aa;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FDFDFF;
+}
+
+/* END Navbar Left Section */
+
 #content {
   display: flex;
   align-items: center;
