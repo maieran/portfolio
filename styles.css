@@ -937,6 +937,18 @@ h1 {
 }
 
 
+.footer {
+  width: 100%;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  color: #888888;
+  background-color: #F9F9F9;
+  margin-top: 40px;
+}
+
 /* mobile responsiveness */
 @media (max-width: 768px) {
   #hero {
