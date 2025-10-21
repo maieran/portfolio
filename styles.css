@@ -949,6 +949,45 @@ h1 {
   margin-top: 40px;
 }
 
+
+.spacer {
+  /* footer */
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-end;
+align-content: flex-start;
+padding: 0px;
+gap: 67px 193px;
+isolation: isolate;
+
+width: 1278px;
+height: 0px;
+
+}
+
+.footer-text {
+  /* Company Inc */
+  width: 233px;
+  height: 40px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C1B1F;
+  display: block;
+  align-items: center;
+  padding: 0px;
+}
+
+.footer-text p {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
 /* mobile responsiveness */
 @media (max-width: 768px) {
   #hero {
