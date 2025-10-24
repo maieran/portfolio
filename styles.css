@@ -849,16 +849,16 @@ h1 {
 }
 
 #contact-picture {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    padding: 44px; 
-    gap: 16.38px; 
-    isolation: isolate; 
-    width: 341px; 
-    /* height: 467px;  */
-    background: url("assets/images/contact-picture.png") no-repeat center/cover; 
-    border-radius: 45.0406px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px;
+  gap: 16.38px;
+  isolation: isolate;
+  width: 341px;
+  height: 467px;
+  background: url("assets/images/contact-picture.png");
+  border-radius: 45.0406px;
 }
 
 .contact_header {
@@ -923,6 +923,8 @@ h1 {
   border-radius: 44px;
   padding: 16px 20px;
   font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 9px;
 }
 
 #problem-description-textfield {
@@ -947,11 +949,13 @@ h1 {
 }
 
 .language_knowledge_paragraph {
-  font-size: 18px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
   font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
   color: #1D5D4D;
-  margin-top: 32px;
-  margin-bottom: 16px;
 }
 
 
