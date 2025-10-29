@@ -58,15 +58,18 @@ html {
 /* END Nav-Center */
 
 /* BEGIN Navbar Left Section */
+
+.nav-user-info {
+  display: flex;
+}
+
 .nav-left {
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px; /* <— Abstand zwischen den Blöcken */
+  width: 270px; /* Automatisch an Inhalt anpassen */
   padding: 8px 20px;
-  gap: 0px;
-  width: 270px;
   height: 54px;
   background: #FFFFFF;
   border: 1px solid #DEDEDE;
@@ -97,10 +100,18 @@ html {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #1C1B1F;
+  margin-left: 8px; /* Abstand zum Profilbild */
+  margin-right: 8px; /* Abstand zur section-title */
+  white-space: nowrap;
+
 }
 
 .nav-name-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C1B1F;
   text-decoration: none;
+  white-space: nowrap;
   color: inherit;
 }
 
@@ -112,8 +123,10 @@ html {
 }
 
 .nav-section-title {
-  background: #42d1aa;
-  padding: 6px 16px;
+  min-width: 96px; /* Feste Mindestbreite */
+  max-width: 96px; /* Max-Begrenzung */
+  text-align: center;
+  padding: 4px 10px;
   border-radius: 999px;
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
@@ -121,6 +134,11 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #FDFDFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #42d1aa; /* oder dynamisch per JS */
+  flex-shrink: 0; /* Verhindert, dass sich der Text zusammenquetscht */
 }
 
 /* END Navbar Left Section */
