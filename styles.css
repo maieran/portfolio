@@ -887,13 +887,15 @@ h1 {
 
 #contact-picture {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
-  padding: 44px;
+  padding: 0px 0px;
+  margin-bottom: 44px;
   gap: 16.38px;
   isolation: isolate;
-  width: 560px;
-  height: 657px;
+  width: 341px;
+  height: 467px;
   border-radius: 45.0406px;
 }
 
