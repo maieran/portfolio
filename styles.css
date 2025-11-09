@@ -1029,6 +1029,21 @@ h1 {
   font-weight: 600;
 }
 
+.work-experience-button{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 33px;
+  width: 497px;
+  height: 42px;
+  background: #1D5D4D;
+  border: 1px solid #FDFDFF;
+  border-radius: 44px;
+}
+
 .language_knowledge_paragraph {
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
