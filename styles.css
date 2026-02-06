@@ -377,19 +377,24 @@ h1 {
 }
 
 .work-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 24px;
-    gap: 8px;
-    width: 585px;
-    height: 200px;
-    border: 1px solid #DEDEDE;
-    border-radius: 44px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  /* Figma-like spacing */
+  padding: 44px;
+  gap: 16px;
 
+  width: 585px;
+  min-height: 394px; /* wichtig: verhindert „gepresst“ */
+
+  border: 1px solid #DEDEDE;
+  border-radius: 44px;
+  box-sizing: border-box;
+
+  justify-content: flex-start; /* Inhalt oben sauber */
 }
+
 
 .work-tile-line {
     display: flex;
@@ -429,6 +434,13 @@ h1 {
     text-align: center;
     margin: 4px 0 0 0;
     max-width: 497px;
+
+      /* hält die Tile immer stabil */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* 4 Zeilen max */
 }
 
 #projects {
@@ -1029,20 +1041,40 @@ h1 {
   font-weight: 600;
 }
 
-.work-experience-button{
-  box-sizing: border-box;
+.work-experience-button {
+  /* Wrapper bleibt im Layout – Button wird IMMER gleich positioniert */
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  gap: 33px;
+  justify-content: center;
+
+  margin-top: auto; /* <- schiebt den Button innerhalb der Tile nach unten */
+}
+
+.work-experience-button > button {
   width: 497px;
   height: 42px;
+
   background: #1D5D4D;
   border: 1px solid #FDFDFF;
   border-radius: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FDFDFF;
+
+  cursor: pointer;
+  padding: 0;
 }
+
+.work-experience-button:hover{ filter: brightness(1.08); }
+.work-experience-button:active{ transform: translateY(1px); }
 
 .language_knowledge_paragraph {
   font-family: 'Plus Jakarta Sans';
