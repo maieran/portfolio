@@ -429,13 +429,13 @@ h1 {
     color: #1C1B1F;
     text-align: center;
     margin: 4px 0 0 0;
-    max-width:497px;
-    height:72px;
-    /*
+    max-width: 497px;
+    height: 108px;
     overflow: hidden;
+
     display: -webkit-box;
     -webkit-box-orient: vertical;
-     -webkit-line-clamp: 6; */
+    -webkit-line-clamp: 6;
 }
 
 .work-experience-button {
