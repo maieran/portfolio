@@ -9,9 +9,8 @@ html {
   left: 0;
   display: flex;
   justify-content: center;
-  background-color: white; /* Optional, je nach Design */
+  background-color: transparent;
   z-index: 1000;
-
 }
 
 .navbar {
@@ -39,6 +38,7 @@ html {
   width: 988px;
   height: 54px;
   border: 1px solid #DEDEDE;
+  background-color: white;
   border-radius: 44px;
 }
 
